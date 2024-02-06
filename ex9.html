@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Function</h1>
+
+    <h2>Basic</h2>
+    <ul>
+        <script>
+            function two(){
+                document.write('<li>2-1</li>');
+                document.write('<li>2-2</li>');
+            }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+        </script>
+    </ul>
+
+    <h2>Parameter & Argument</h2>
+    <script>
+        function onePlusOne(){
+            document.write(1+1+'<br>');
+        }
+        onePlusOne();
+        function sum(left, right){
+            document.write(left+right+'<br>');
+        }
+        function sumColorRed(left, right){
+            document.write('<div style = "color:red">'+(left+right)+'</div>');
+        }
+
+        sum(2,3); // 5 *//은 주석!!
+        sumColorRed(2,3); //5
+        sum(3,4); // 7
+    </script>
+
+    <h2>Return</h2>
+    <script>
+        function sum2(left, right){
+            return left+right; //return을 사용하면, 함수의 결과를 변수에 저장하거나, 다른 함수의 인자로 전달하는 등 다양한 방법으로 활용할 수 있습니다.반대로 return을 사용하지 않는다면, 함수는 작업을 수행하기만 하고 그 결과를 어디에도 전달하지 않습니다. 그래서 함수의 결과를 이용해 무언가를 하려면 return을 사용해야 합니다.
+        }
+        document.write(sum2(2,3)+'<br>');
+        document.write('<div style = "color:red">'+sum2(2,3)+'</div>');
+        document.write('<div style = "font-size:3rem">'+sum2(2,3)+'</div>');
+    </script>
+</body>
+</html>
