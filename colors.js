@@ -15,7 +15,7 @@ var Links = {
    $('body').css('color',color);
   },
    setBackgroundColor:function BodySetBackgroundColor(color){
-   //document.querySelector('body').style.backgroundColor = color;
+   //document.querySelector('body').style.backgroundColor = color; CSS에서 가져오는거
   $('body').css('backgroundColor',color);
   }
   }
